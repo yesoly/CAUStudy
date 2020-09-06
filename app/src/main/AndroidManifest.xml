@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.caustudy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cau"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cau"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MdInstructionActivity"></activity>
+        <activity android:name=".PostViewActivity" />
+        <activity android:name=".PostViewActivity2" />
+
+        <activity android:name=".MemberManagement.MemberManagementActivity" />
+        <activity android:name=".MemberManagement.Dialog_rating_inquiry" />
+        <activity android:name=".MemberManagement.Dialog_member_evaluation" />
+        <activity android:name=".MakeTodoActivity" />
+        <activity android:name=".AttendantActivity" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".ui.Setting.Setting_HashtagActivity" />
+        <activity android:name=".ui.Setting.SettingFragment" />
+        <activity
+            android:name=".EditorActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity android:name=".CoreActivity" />
+        <activity
+            android:name=".SettingStudyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudyMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudyDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MakeStudyActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity android:name=".FindPW_Activity" />
+        <activity
+            android:name=".PostActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostActivity2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JMainActivity2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SignInActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.65"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="이름"
+            android:textSize="23dp"
+            android:textColor="#0075BB"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/item_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="이메일"
+            android:textSize="16dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/item_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="학과"
+            android:textSize="16dp"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:layout_margin="1dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ToggleButton
+            android:id="@+id/toggle_1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/toggle_selector"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:theme="@style/ToggleButton.CustomTheme"
+            android:checked="false"
+            android:textOff="출석"
+            android:textOn="출석" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:layout_margin="1dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ToggleButton
+            android:id="@+id/toggle_2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/toggle_selector"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:theme="@style/ToggleButton.CustomTheme"
+            android:checked="false"
+            android:textOff="지각"
+            android:textOn="지각" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:layout_margin="1dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ToggleButton
+            android:id="@+id/toggle_3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/toggle_selector"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:theme="@style/ToggleButton.CustomTheme"
+            android:checked="false"
+            android:textOff="결석"
+            android:textOn="결석" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "907542129939",
+    "firebase_url": "https://caustudy-88591.firebaseio.com",
+    "project_id": "caustudy-88591",
+    "storage_bucket": "caustudy-88591.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907542129939:android:957c37798aca9cec3abee6",
+        "android_client_info": {
+          "package_name": "com.example.caustudy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907542129939-7vc6p2co1di9qcb7ngdun6ftjuqbd042.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caustudy",
+            "certificate_hash": "33e37a01a32a1578c2a501f5ddbe7010fe914d1e"
+          }
+        },
+        {
+          "client_id": "907542129939-l7i5jv52r7104pfks15k2f3vod52dauj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDR73kRo1o7GLiUIrBGf82OpFdhWVlk_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907542129939-l7i5jv52r7104pfks15k2f3vod52dauj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/mobile_navigation"
+app:startDestination="@+id/navigation_home">
+
+<fragment
+    android:id="@+id/navigation_home"
+    android:name="com.example.caustudy.ui.home.HomeFragment"
+    android:label="@string/title_home"
+    tools:layout="@layout/fragment_home" />
+
+<fragment
+    android:id="@+id/navigation_searchstudy"
+    android:name="com.example.caustudy.ui.searchstudy.SearchStudyFragment"
+    android:label="스터디 찾기"
+    tools:layout="@layout/fragment_searchstudy" />
+
+<fragment
+    android:id="@+id/navigation_mystudy"
+    android:name="com.example.caustudy.ui.MyStudy.MyStudyFragment"
+    android:label="@string/title_notifications"
+    tools:layout="@layout/fragment_mystudy" />
+<fragment
+    android:id="@+id/navigation_setting"
+    android:name="com.example.caustudy.ui.Setting.SettingFragment"
+    android:label="@string/title_notifications"
+    tools:layout="@layout/fragment_setting" />
+
+
+
+</navigation>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:includeFontPadding="false"
+            android:text="TITLE"
+            android:textSize="22dp"
+            android:textColor="#0075BB"
+            android:textStyle="bold"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/item_next_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="다음 모임일자 : "
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/view_next_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="10dp"
+
+                android:text="다 시간"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/item_next_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="다음 모임장소 : "
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/view_next_location"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="다음 장"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/item_next_assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="준비 과제 : "
+                android:textSize="14dp"
+                android:textColor="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/view_next_assignment"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="다음 과"
+                android:textSize="14dp"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/item_recent_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="최근 공지 : "
+                android:textSize="14dp"
+                android:textColor="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/view_recent_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:includeFontPadding="false"
+                android:text="최근 공지"
+                android:textSize="14dp"
+                android:textColor="@android:color/holo_blue_dark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
